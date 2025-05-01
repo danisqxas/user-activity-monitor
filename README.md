@@ -102,11 +102,11 @@ Porque la trazabilidad **no es opcional**, es una capa fundamental de cualquier 
 
 ## 👨‍💻 Autor
 
-**Daniel Sebastián Rocha Jaureguy**  
+**Daniel R.**  
 GitHub: [@danisqxas](https://github.com/danisqxas)  
 Estudiante de Ingeniería en Ciberseguridad. Apasionado por el código robusto, los entornos oscuros y los gatos que maúllan mientras se loguea un evento.
 
-> “No se trata de ver todo. Se trata de ver lo que importa.”
+> “No se trata de ver todo. Se trata de ver lo que realmente importa y no dejar que se pierda en el ruido.”
 
 ---
 
@@ -120,5 +120,5 @@ Distribuido bajo la Licencia MIT. Uso libre para fines personales, educativos o 
   <b>🚨 Este no es un proyecto improvisado.</b><br>
   <i>Es una herramienta forjada desde la obsesión por el detalle, la estética funcional y el código que respira claridad.</i><br>
   <br>
-  🧩 <b>Si tu equipo necesita monitoreo real, esto no es una opción. Es una necesidad.</b>
+  🧩 <b>Si tu equipo necesita monitoreo real, esto no es una opción. Es una necesidad profesional.</b>
 </p>
