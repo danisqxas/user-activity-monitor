@@ -1,8 +1,10 @@
 # 👁️‍🗨️ User Activity Monitor
 
-![Logo](https://raw.githubusercontent.com/danisqxas/user-activity-monitor/main/.assets/logo-monitor-dark.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/danisqxas/user-activity-monitor/main/assets/user-activity-logo.png" width="220" alt="User Activity Monitor Logo">
+</p>
 
-> ⚡ Herramienta visual de auditoría y trazabilidad para entornos Discord. Diseñada con precisión quirúrgica para brindar control absoluto sobre la actividad de usuarios en tiempo real.
+> ⚡ Herramienta visual de auditoría y trazabilidad diseñada con precisión quirúrgica para entornos Windows o Discord. Brinda control absoluto sobre la actividad de usuarios en tiempo real.
 
 Un proyecto pensado para administradores exigentes, desarrolladores que aman entender todo lo que ocurre en sus servidores, y equipos de seguridad que valoran el **detalle invisible al ojo humano**.
 
@@ -13,7 +15,7 @@ Un proyecto pensado para administradores exigentes, desarrolladores que aman ent
 🔹 Monitorea eventos clave: mensajes (envío, edición, borrado), canales de voz (join/leave/mute), creación de threads, cambios de nick, reacciones, actualizaciones de roles y más.  
 🔹 Interfaz gráfica en pestañas: historial completo, filtro de eventos, panel de configuración interactiva.  
 🔹 Soporte avanzado para excluir servidores, eventos y usuarios según criterios definidos.  
-🔹 Persistencia total mediante archivo JSON sincronizado en tiempo real.
+🔹 Persistencia total mediante archivo JSON sincronizado en tiempo real.  
 
 > Todo el seguimiento ocurre desde una interfaz intuitiva, sin necesidad de terminal ni comandos manuales.
 
@@ -21,7 +23,7 @@ Un proyecto pensado para administradores exigentes, desarrolladores que aman ent
 
 ## 🎯 Objetivo
 
-Centralizar el registro de actividad del usuario en un entorno Discord para brindar trazabilidad a moderadores, analistas o bots de control. El foco es la **usabilidad, modularidad y experiencia visual limpia**.
+Centralizar el registro de actividad del usuario en un entorno visual para brindar trazabilidad a moderadores, analistas o bots de control. El foco es la **usabilidad, modularidad y experiencia visual limpia**.
 
 ---
 
@@ -30,7 +32,7 @@ Centralizar el registro de actividad del usuario en un entorno Discord para brin
 ```plaintext
 📊 [History Tab]   ➤ Tabla con todos los eventos del usuario con acciones como: jump, eliminar, copiar ID
 🎛 [Filter Tab]    ➤ Selector múltiple de eventos y servidores ignorados (persistentes)
-🛠  [Config Tab]    ➤ Edición directa del JSON con validación instantánea
+🛠  [Config Tab]   ➤ Edición directa del JSON con validación instantánea
 ```
 
 Todo se actualiza en tiempo real, y los cambios se reflejan sin reiniciar el bot.
@@ -66,7 +68,7 @@ user-activity-monitor/
 ├── LICENSE                 # MIT License
 ├── README.md               # Este archivo
 ├── .gitignore              # Exclusiones comunes
-└── .assets/                # Logos, capturas y recursos visuales (opcional)
+└── assets/                 # Logos, capturas y recursos visuales
 ```
 
 ---
@@ -92,11 +94,11 @@ También se puede generar una demo animada del flujo de uso si es solicitado.
 
 ## 💬 ¿Por qué este proyecto?
 
-Porque el monitoreo no debería depender de logs manuales o bots limitados.
-
-Porque las herramientas de auditoría visual deben ser tan claras como los eventos que muestran.
-
+Porque el monitoreo no debería depender de logs manuales o bots limitados.  
+Porque las herramientas de auditoría visual deben ser tan claras como los eventos que muestran.  
 Porque la trazabilidad **no es opcional**, es una capa fundamental de cualquier ecosistema Discord bien administrado.
+
+> "Trazar el camino del usuario no es vigilarlo... es entenderlo para construir un entorno más seguro y transparente."
 
 ---
 
@@ -104,9 +106,7 @@ Porque la trazabilidad **no es opcional**, es una capa fundamental de cualquier 
 
 **Daniel R.**  
 GitHub: [@danisqxas](https://github.com/danisqxas)  
-Estudiante de Ingeniería en Ciberseguridad. Apasionado por el código robusto, los entornos oscuros y los gatos que maúllan mientras se loguea un evento.
-
-> “No se trata de ver todo. Se trata de ver lo que realmente importa y no dejar que se pierda en el ruido.”
+Estudiante de Ingeniería en Ciberseguridad. Apasionado por el código robusto, los entornos oscuros y los gatos con nombre de pescado.
 
 ---
 
@@ -118,7 +118,6 @@ Distribuido bajo la Licencia MIT. Uso libre para fines personales, educativos o 
 
 <p align="center">
   <b>🚨 Este no es un proyecto improvisado.</b><br>
-  <i>Es una herramienta forjada desde la obsesión por el detalle, la estética funcional y el código que respira claridad.</i><br>
-  <br>
+  <i>Es una herramienta forjada desde la obsesión por el detalle, la estética funcional y el código que respira claridad.</i><br><br>
   🧩 <b>Si tu equipo necesita monitoreo real, esto no es una opción. Es una necesidad profesional.</b>
 </p>
