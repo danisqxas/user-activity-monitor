@@ -27,6 +27,27 @@ Centralizar el registro de actividad del usuario en un entorno visual para brind
 
 ---
 
+## 📌 Comparativa rápida
+
+| Herramienta                 | Interfaz GUI | Auditoría visual | Filtro en tiempo real | Open Source |
+|----------------------------|--------------|------------------|-----------------------|-------------|
+| **User Activity Monitor**  | ✅ Sí         | ✅ Completa       | ✅ Dinámica            | ✅ Sí        |
+| Simple Activity Log Bot    | ❌ No         | ❌ Parcial        | ❌ No                 | ❌ No        |
+| Logger Pro                 | ❌ No         | ✅ Básica         | ❌ No                 | ❌ No        |
+
+> Este proyecto busca elevar el estándar de lo que una herramienta de monitoreo debería ofrecer.
+
+---
+
+## 💼 Casos de uso
+
+- Administradores que necesitan evidencia clara de la actividad por usuario o servidor.
+- Desarrolladores de bots que buscan depurar eventos de Discord en tiempo real.
+- Analistas de seguridad que implementan trazabilidad en comunidades sensibles.
+- Profesores o formadores que requieren una bitácora en entornos educativos.
+
+---
+
 ## 📺 Vista general
 
 ```plaintext
@@ -86,9 +107,29 @@ user-activity-monitor/
 
 ## 📸 Capturas
 
-> *Capturas de pantalla con temas oscuros y claros próximamente.*
+<p align="center">
+  <img src="https://raw.githubusercontent.com/danisqxas/user-activity-monitor/main/assets/capture-history-dark.png" width="400" alt="Captura Historial">
+  <img src="https://raw.githubusercontent.com/danisqxas/user-activity-monitor/main/assets/capture-config-light.png" width="400" alt="Captura Configuración">
+</p>
 
-También se puede generar una demo animada del flujo de uso si es solicitado.
+> *Modo claro y oscuro adaptado al entorno. Más capturas próximamente.*
+
+---
+
+## 🎞️ Demo animada
+
+> Disponible pronto: flujo completo de uso en formato GIF o video corto.
+
+---
+
+## 🛠️ Roadmap
+
+- [x] Implementar interfaz gráfica completa
+- [x] Añadir filtros por tipo de evento y usuario
+- [x] Soporte multiserver
+- [ ] Compatibilidad multiplataforma mejorada (macOS)
+- [ ] Exportación directa en Excel y PDF
+- [ ] Modo live stream para auditoría externa
 
 ---
 
@@ -117,7 +158,7 @@ Distribuido bajo la Licencia MIT. Uso libre para fines personales, educativos o 
 ---
 
 <p align="center">
-  <b>🚨 Este no es un proyecto improvisado.</b><br>
-  <i>Es una herramienta forjada desde la obsesión por el detalle, la estética funcional y el código que respira claridad.</i><br><br>
-  🧩 <b>Si tu equipo necesita monitoreo real, esto no es una opción. Es una necesidad profesional.</b>
+  <b>📌 Este no es un script más que tira logs...</b><br>
+  <i>Es una herramienta profesional que transforma eventos dispersos en conocimiento estructurado.</i><br><br>
+  🧠 <b>Audita. Comprende. Mejora. No monitorees por obligación... hazlo con elegancia.</b>
 </p>
