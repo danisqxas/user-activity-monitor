@@ -1,4 +1,4 @@
-# User Activity Monitor (Advanced script)
+# User Activity Monitor (Advanced Script)
 
 > 🎯 Monitorea, analiza y exporta la actividad de usuarios con una interfaz potente, extensible y profesional.
 
