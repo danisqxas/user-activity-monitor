@@ -1,0 +1,4 @@
+# Dependencies for the User Activity Monitor
+pytest>=7.0
+# Uncomment the following line if you plan to integrate with Discord API
+# discord.py>=2.0
