@@ -30,4 +30,7 @@ jobs:
       - name: Run Pylint
         run: |
           echo "🔍 Analizando con pylint..."
-          pylint src/**/*.py
+   
+  - name: Run tests
+    run: |
+      pytest -qpylint src/**/*.py
