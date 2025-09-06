@@ -1,4 +1,4 @@
-name: Pylint
+name: Lint and Test
 
 on:
   push:
@@ -30,7 +30,8 @@ jobs:
       - name: Run Pylint
         run: |
           echo "🔍 Analizando con pylint..."
-   
-  - name: Run tests
-    run: |
-      pytest -qpylint src/**/*.py
+          pylint src/**/*.py
+
+      - name: Run tests
+        run: |
+          pytest -q
