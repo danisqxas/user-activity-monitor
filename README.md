@@ -1,132 +1,77 @@
-# User Activity Monitor (Advanced Script)
+# User Activity Monitor
 
-> 🎯 Monitorea, analiza y exporta la actividad de usuarios con una interfaz potente, extensible y profesional.
+Aerthex User Activity Monitor is a modular Python toolkit for tracking and analysing user activity events across digital communities, such as Discord servers. It exposes an asynchronous API to register and retrieve user interactions, persist them to disk, and integrate seamlessly with Discord bots.
 
----
+## Features
 
-## 📌 Descripción
+- **Advanced tracking logic** – Monitors users across multiple servers and direct messages with fine‑grained settings.
+- **Asynchronous design** – Built on `asyncio` to avoid blocking your bot and integrate cleanly with Discord interactions.
+- **Settings management** – Load and update tracked users and selected events in a JSON configuration file.
+- **Rich API** – Provides functions to record events, compute time deltas, and build summary reports.
+- **Modern GUI scaffold** – Includes an example of a custom `customtkinter` interface for visualising user activity.
+- **Extensible** – Designed to be the core of a larger application; can be imported as a library or run as a standalone tool.
 
-**User Activity Monitor** es una solución de seguimiento avanzada diseñada para monitorear y analizar eventos generados por usuarios en entornos digitales, especialmente en Discord. Implementa una arquitectura modular basada en Python, integrando GUI con `customtkinter` y soporte para bots usando `discord.py`.
-
-Este monitor no solo registra datos, sino que ofrece herramientas para analizar comportamientos, exportar registros e interactuar desde una interfaz gráfica moderna.
-
----
-
-## 📂 Estructura del Proyecto
+## Repository Structure
 
 ```
 user-activity-monitor/
 ├── src/
-│   ├── user_activity_tracker.py   # Script principal con GUI y lógica de tracking
-│   └── __init__.py                # Inicializador del módulo (opcional)
-│
+│   ├── user_activity_monitor.py  # Advanced monitor implementation
+│   ├── user_activity_tracker.py  # Backwards‑compatible stub importing the new monitor
+│   └── __init__.py               # Exposes public APIs
+├── tests/
+│   └── test_user_activity_monitor.py  # Basic import test (you can expand this)
 ├── .github/
-│   └── workflows/
-│       └── pylint.yml             # CI para linting automático
-│
-├── requirements.txt              # Dependencias necesarias
-├── LICENSE                       # Licencia MIT
-└── README.md                     # Este archivo
+│   └── workflows/                # Continuous integration configuration
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
----
+## Installation
 
-## 🛠️ Tecnologías y Dependencias
-
-* `Python >= 3.10`
-* `customtkinter` → interfaz moderna y adaptable
-* `discord.py` → integración con bots
-* `pyperclip` → copiado de logs
-* Librerías estándar: `asyncio`, `csv`, `uuid`, `datetime`, `logging`
-
-### Instalación
+To set up the environment, clone the repository and install the dependencies:
 
 ```bash
+git clone https://github.com/danisqxas/user-activity-monitor.git
+cd user-activity-monitor
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-O bien manualmente:
+The primary external dependency is `discord.py`, which is used only if you integrate the monitor into a bot. All other modules are part of the Python standard library.
 
-```bash
-pip install customtkinter discord.py pyperclip
+## Usage
+
+You can import the monitor in your own code and invoke the API functions:
+
+```python
+from user_activity_monitor import userActivityTracker
+
+tracker = userActivityTracker()
+# Update settings
+await tracker.updateUserActivitySettings('tracked_users', [123456789012345678])
+# Retrieve settings
+settings = await tracker.getUserActivitySettings()
+print(settings['tracked_users'])
 ```
 
----
+If you want to run the included customtkinter interface, adapt the `user_activity_monitor.py` code to fit your bot or desktop application. The monitor is designed to be extended; feel free to add your own event handlers or outputs.
 
-## 🚀 Funcionalidades Destacadas
+## Running Tests
 
-### 🔍 Seguimiento Inteligente
-
-* Registro en tiempo real de mensajes, reacciones y cambios de voz
-* Sistema de caché TTL configurable
-* Filtros activos por servidor o evento
-
-### 📊 Módulo de Análisis
-
-* Eventos más frecuentes por usuario
-* Servidor más activo
-* Gráficos diarios y por hora
-
-### 💾 Exportación Precisa
-
-* Exportación de registros a CSV
-* Compatibilidad con hojas de cálculo y visualizadores externos
-
-### 🖥️ GUI Moderna
-
-* Interfaz limpia usando `customtkinter`
-* Botones, selectores, métricas y tablas interactivas
-* Temas claros y oscuros compatibles
-
-### 🤖 Modo Bot Discord
-
-* Integración con `discord.ext.commands`
-* Comandos personalizados (`!purge_events`, etc.)
-
----
-
-## 🧪 Modo de Uso
-
-### ▶️ Ejecutar Interfaz Gráfica
+This repository uses [pytest](https://docs.pytest.org/) for testing. To run the test suite:
 
 ```bash
-python src/user_activity_tracker.py
+pytest -q
 ```
 
-### ⚙️ Usar como bot de Discord
+You can expand the tests to cover your custom logic and ensure your modifications stay correct.
 
-1. Crea una aplicación en el [portal de Discord](https://discord.com/developers/applications)
-2. Activa los intents requeridos (presencia, contenido de mensaje)
-3. Inserta tu token en el script correspondiente
+## Contributing
 
----
+Contributions and suggestions are welcome! If you’d like to improve the monitor, build out the GUI, or add more tests, feel free to fork the repository and open a pull request. Please make sure to run the tests and follow Pythonic style before submitting changes.
 
-## 🗺️ Roadmap
+## License
 
-* [x] Seguimiento de eventos con caché TTL
-* [x] Análisis gráfico por usuario y servidor
-* [x] Exportación automatizada
-* [x] GUI profesional interactiva
-* [ ] Base de datos persistente (SQLite/PostgreSQL)
-* [ ] Panel web con FastAPI
-* [ ] Integración con dashboards externos (Grafana, Metabase)
-
----
-
-## 🧑‍💻 Autor
-
-**Aerthex** – [@danisqxas](https://github.com/danisqxas)
-🔐 Ciberseguridad ofensiva & automatización
-🧩 Arquitectura de scripts con estilo y propósito
-
----
-
-## 📄 Licencia
-
-Distribuido bajo la licencia **MIT**. Puedes modificar, distribuir o integrarlo en tus proyectos siempre que se mantenga la atribución.
-
----
-
-## 🌌 Última palabra
-
-> "Un sistema bien trazado es el primer paso hacia la visibilidad total." – Aerthex Labs
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
